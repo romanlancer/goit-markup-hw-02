@@ -13,6 +13,14 @@ body {
   --main-background-color: #e5e5e5;
   --team-background-color: #f5f4fa;
 }
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+a {
+  text-decoration: none;
+  /* Убираем подчёркивание для всех ссылок */
+}
 /* стили хедера */
 header {
   background-color: var(--background-color);
@@ -22,7 +30,6 @@ header {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -39,7 +46,6 @@ header {
   letter-spacing: 0.02em;
 }
 .navigation-list .navigation-link {
-  text-decoration: none;
   color: var(--secondary-text-color);
 }
 .navigation-list .navigation-link:hover,
@@ -47,7 +53,6 @@ header {
   color: var(--accent-color);
 }
 .navigation-link-current {
-  text-decoration: none;
   color: var(--accent-color);
 }
 .contacts-header,
@@ -55,7 +60,6 @@ header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--primary-text-color);
 }
 .contacts-header .contacts-link:hover,
@@ -96,6 +100,7 @@ header {
 }
 .advantages-title {
   font-weight: 700;
+  font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
@@ -135,7 +140,6 @@ footer {
 .contacts-footer-link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
 }
 .contacts-footer .contacts-footer-link:hover,
 .contacts-footer .contacts-footer-link:focus {
@@ -143,6 +147,7 @@ footer {
 }
 /* cтили для portfolio */
 .jobs-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
